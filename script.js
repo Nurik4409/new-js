@@ -684,13 +684,217 @@
 //     list.appendChild(item)
 // })
 
-let register = document.getElementById("register")
-let button = document.getElementById("button")
-button.addEventListener('click', function(){
-    let item = document.createElement('input')
-    item.textContent = register
-    register.appendChild(item)
-})
+// let register = document.getElementById("register")
+// let button = document.getElementById("button")
+// button.addEventListener('click', function(){
+//     let item = document.createElement('input')
+//     item.textContent = register
+//     register.appendChild(item)
+// })
+
+
+
+
+
+
+// let container = document.getElementById("con")
+// let heading = container.querySelector('h1')
+// let paragraph = container.querySelector('p')
+// let list = container.querySelectorAll('ul li');
+// let button = document.getElementById("btn")
+// let button2 = document.getElementById("btn2")
+// button.addEventListener("click", function(){
+//     list[0].classList.toggle('highlight')
+//     heading.textContent = 'chtoto'
+//     paragraph.textContent = 'ifbig'
+//     paragraph.style.backgroundColor = 'black'
+// });
+// button2.addEventListener("click" , function(){
+//     heading.textContent = this.remove.heading
+//     paragraph.textContent = this.remove.paragraph
+//     document.write("Document are deleted")
+// });
+
+// let name = document.getElementById("name")
+// let check_btn = document.getElementById("checkbtn")
+
+// let container = document.getElementById("container")
+// let submit_btn = document.getElementById("sbmbtn")
+// let item = document.createElement('li')
+// submit_btn.addEventListener('click', function(){
+//     item.textContent = container
+//     container.appendChild(item)
+// })
+ 
+
+
+
+// let div = document.getElementById('box')
+// let btn = document.getElementById('btn')
+// let input = div.querySelector('input')
+
+
+
+// btn.addEventListener("click", function(){
+//     let a = document.createElement('input')
+//     let lb = document.createElement("label")
+//     a.textContent=btn
+//     box.appendChild(a)
+//     lb.innerHTML=" name"
+//     a.after(lb)
+// });
+
+// let ul = document.getElementById('ol')
+// let btn = document.getElementById('btn')
+// btn.addEventListener('click',function(){
+//     for (let  a= 0; a < 3; a++) {
+//         let po = document.createElement('input')
+//         let lb = document.createElement('label')
+//         po.innerHTML = a
+//         lb.innerHTML = 'check'
+//         ul.before(po)
+//         ul.before(lb)
+//     }
+// });
+
+
+// ol.before('before');
+// ol.after('after');
+// let lifist = document.createElement('li');
+// lifist.innerHTML = 'boshi';
+// ol.prepend(lifist);
+// let lilast = document.createElement('li');
+// lilast.innerHTML = 'oxiri';
+// ol.append(lilast)
+
+
+// let full_div = document.getElementById('full_div')
+// let imya = document.getElementById('imya')
+// let email = document.getElementById('email')
+// let parol = document.getElementById('parol')
+// let konez_btn = document.getElementById('konez')
+
+// document.getElementById('reg').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Prevent the form from submitting
+
+//     // Get form values
+//     const imya = document.getElementById('name').value.trim();
+//     const email = document.getElementById('email_input').value.trim();
+//     const parol = document.getElementById('parol_input').value.trim();
+
+//     // Display result
+//     const resultdiv = document.getElementById('result');
+//     resultdiv.innerHTML = `
+//         <h1>Ваши Данные:</h1>
+//         <p><strong>Имя пользователя:</strong> ${imya}</p>
+//         <p><strong>Email:</strong> ${email}</p>
+//         <p><strong>Пароль:</strong> ${parol}</p>
+//     `;
+// });
+
+
+
+
+
+
+// class amir{
+//     handleEvent(event){
+//         switch(event.type){
+//             case 'mousedown':
+//                 btn.innerHTML = "bosoqooo";
+//                 break;
+//             case 'mouseup' :
+//                 btn.innerHTML = "mdaaa";
+//                 break;
+//         }
+//     }
+// }
+// let amir2 = new amir();
+// btn.addEventListener('mousedown', amir2);
+// btn.addEventListener('mouseup', amir2)
+
+
+// document.getElementById('btn').onclick = function(){
+//     document.getElementById('text').hidden = true;
+// }
+
+// document.getElementById('open').onclick = function(){
+//     document.getElementById("div").hidden = false;
+// }
+// document.getElementById('close').onclick = function(){
+//     document.getElementById("div").hidden = true;
+// }
+
+let slideIndex = 0
+function showSlide(){
+    let slides = document.getElementById('slides');
+    let slideCount = document.getElementById(".slides img").length;
+
+    if (index >= slideCount){
+        slideIndex = 0;
+    }else if(index <= 0){
+        slideIndex = slideIndex - 1
+    }else{
+        slideIndex = index;
+    }
+
+    slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+function nextSlide(){
+    showSlide(slideIndex + 1);
+}
+function prevSlide(){
+    showSlide(slideIndex - 1);
+}
+setInterval(nextSlide , 2000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
